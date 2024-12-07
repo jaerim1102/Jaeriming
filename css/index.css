@@ -1,0 +1,191 @@
+body {
+   background: #000;
+   color: #fff;
+   width: 100vw;
+   display: flex;
+   height: calc(var(--vh, 1vh)*100);
+   align-items: center;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   /* background-image: url(../src/img/bgi.jpg);
+   background-size: cover; */
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+}
+
+main {
+   position: relative;
+   margin: 0 auto;
+   width: 360px;
+   height: 735px;
+   background-image: url(../src/img/mockup.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   /* bgi 짤리면 패딩 조정하깃 */
+   padding: 14px 17px 55px;
+}
+
+.mokup-inner {
+   position: relative;
+   z-index: 2;
+   padding: 16px 35px;
+
+   height: 100%;
+}
+
+/* 헤더 */
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header img {
+   width: 72px;
+}
+
+.clock {
+   font-size: 15px;
+   font-weight: 700;
+   margin-left: 20px;
+}
+
+/* 메인 */
+.main-content {
+   margin-top: 30px;
+   font-size: 10px;
+   display: flex;
+   /* margin-left: 12px; */
+   /* display: grid;
+   grid-template-columns: repeat(3, 1fr); */
+}
+
+.main-content div {
+   margin-right: 27px;
+}
+
+.app-right {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.app-right div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+.app-right span {
+   margin-top: 7px;
+}
+
+.app-right img {
+   width: 55px;
+}
+
+/* find my */
+
+.findMy {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.findMy img {
+   width: 135px;
+}
+
+.findMy span {
+   margin-top: 7px;
+}
+
+.next {
+   margin-left: -25px;
+}
+
+/* 음악 */
+
+.music {
+   font-size: 10px;
+   margin-top: 24px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.music img {
+   width: 305px;
+}
+
+.music span {
+   margin-top: 7px;
+}
+
+
+.music-content {
+   position: absolute;
+
+   display: flex;
+   margin-top: 15px;
+   margin-left: -50px;
+}
+
+.music-content img {
+   border-radius: 7px;
+   width: 111px;
+}
+
+
+.music-title {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+}
+
+.music-title img {
+   width: 63px;
+   height: 25px;
+   margin-top: 20px;
+}
+
+
+.music-played {
+   color: #FFDDFB;
+   font-size: 9px;
+}
+
+.music-info {
+   font-weight: 700;
+   font-size: 13px;
+}
+
+#playPauseBtn {
+   cursor: pointer;
+}
+
+/* 푸터 */
+
+footer {
+   margin-top: 80px;
+   margin-left: -23px;
+}
+
+.dock-content {
+   position: absolute;
+   margin-top: 15px;
+}
+
+.dock-content img {
+   margin-left: 20px;
+   width: 55px;
+   cursor: pointer;
+}
+
+.dock {
+   width: 335px;
+}

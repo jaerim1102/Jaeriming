@@ -1,0 +1,110 @@
+body {
+   background: #000;
+   color: #fff;
+   width: 100vw;
+   display: flex;
+   height: calc(var(--vh, 1vh) * 100);
+   align-items: center;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   /* background-image: url(../src/img/bgi.jpg);
+   background-size: cover; */
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+}
+
+main {
+   position: relative;
+   margin: 0 auto;
+   width: 360px;
+   height: 735px;
+   background-image: url(../src/img/mockup.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   /* bgi 짤리면 패딩 조정하깃 */
+   padding: 14px 17px 55px;
+}
+
+.mokup-inner {
+   position: relative;
+   z-index: 2;
+   padding: 16px 5px;
+   height: 100%;
+}
+
+.goback img {
+   width: 25px;
+   margin-top: 10px;
+}
+
+/* 헤더 */
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 35px;
+}
+
+header img {
+   width: 72px;
+}
+
+.clock {
+   font-size: 15px;
+   font-weight: 700;
+   margin-left: 20px;
+}
+
+/* photo */
+
+.photo-header {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.photo-header img {
+   width: 30px;
+}
+
+.photo-window {
+   height: 480px;
+   position: relative;
+   overflow: hidden;
+}
+
+
+#webcam {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* 화면을 꽉 채움 */
+}
+
+.photo-footer {
+   margin-top: 15px;
+   text-align: center;
+}
+
+.photo-footer .zoom {
+   width: 100px;
+}
+
+.photo-footer .shutter {
+   width: 70px;
+   cursor: pointer;
+}
+
+.shutter:active {
+   transform: scale(0.9);
+   opacity: 0.8;
+   transition: transform 0.1s ease, opacity 0.1s ease;
+}
+
+.photo-footer p {
+   color: #FFD50B;
+   font-size: 12px;
+}

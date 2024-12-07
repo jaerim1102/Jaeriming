@@ -1,0 +1,170 @@
+body {
+   background: #000;
+   color: #fff;
+   width: 100vw;
+   display: flex;
+   height: calc(var(--vh, 1vh) * 100);
+   align-items: center;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   /* background-image: url(../src/img/bgi.jpg);
+   background-size: cover; */
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+}
+
+main {
+   position: relative;
+   margin: 0 auto;
+   width: 360px;
+   height: 735px;
+   background-image: url(../src/img/mockup.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   /* bgi 짤리면 패딩 조정하깃 */
+   padding: 14px 17px 55px;
+}
+
+.mokup-inner {
+   position: relative;
+   z-index: 2;
+   padding: 16px 35px;
+   height: 100%;
+}
+
+.goback img {
+   width: 25px;
+   margin-top: 10px;
+}
+
+/* 헤더 */
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header img {
+   width: 72px;
+}
+
+.clock {
+   font-size: 15px;
+   font-weight: 700;
+   margin-left: 20px;
+}
+
+/* 여기부터.. */
+
+.guitar-cover {
+   text-align: center;
+}
+
+.guitar-cover img {
+   width: 190px;
+}
+
+.guitar-cover h1 {
+   font-size: 23px;
+}
+
+.guitar-cover p {
+   font-size: 10px;
+   margin-top: -10px;
+}
+
+.guitar-button {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.guitar-button button {
+   background: #3D3D3D;
+   border: none;
+   border-radius: 5px;
+   color: #FB0808;
+   font-weight: 700;
+   padding: 8px 10px;
+   cursor: pointer;
+}
+
+.guitar-button button img {
+   width: 10px;
+   margin-right: 5px;
+}
+
+/* 리스트 */
+
+.guitar-list {
+   margin-top: 30px;
+}
+
+.guitar-music {
+   display: flex;
+   border-bottom: 0.75px solid #555;
+   padding-bottom: 1px;
+   margin-bottom: 5px;
+   cursor: pointer;
+}
+
+.guitar-music img {
+   width: 50px;
+   height: 50px;
+   border-radius: 5px;
+}
+
+.guitar-info {
+   display: flex;
+   flex-direction: column;
+   margin-left: 15px;
+   margin-top: 10px;
+}
+
+.guitar-info span {
+   font-weight: 500;
+}
+
+.guitar-info p {
+   margin-top: 0;
+   font-size: 13px;
+   color: #555;
+}
+
+.guitar-popup {
+   position: fixed;
+   bottom: -100px;
+   opacity: 0;
+   transition: all 0.5s ease;
+   z-index: 1000;
+
+   width: 280px;
+   margin-top: 37px;
+   background: #3D3D3D;
+   border-radius: 25px;
+   display: flex;
+   padding-top: 15px;
+   padding: 10px;
+}
+
+.guitar-popup.active {
+   bottom: 170px;
+   /* 나타나는 위치 */
+   opacity: 1;
+}
+
+.guitar-popup img {
+   width: 50px;
+   height: 50px;
+   border-radius: 5px;
+   margin-top: 5px;
+   margin-left: 10px;
+}
+
+.guitar-popup p {
+   color: #939393;
+}
