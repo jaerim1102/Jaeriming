@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>director</title>
+   <link rel="stylesheet" href="../css/director.css">
+</head>
+
+<body>
+
+   <main>
+      <div class="mokup-inner">
+         <header>
+            <div id="clock" class="clock">로딩 중</div>
+            <img src="../src/img/status-bar.png" alt="">
+         </header>
+         <div class="goback">
+            <a href="../index.html"><img src="../src/icon/goback.svg" alt=""></a>
+         </div>
+         <div class="movie-container">
+            <h2>가타카</h2>
+            <img src="../src/movie-img/poster.jpg" alt="">
+            <form class="mb-3" name="myform" id="myform" method="post">
+               <fieldset>
+                  <input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
+                  <input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2">★</label>
+                  <input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3">★</label>
+                  <input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4">★</label>
+                  <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
+               </fieldset>
+            </form>
+            <div>
+               <h3>갤러리</h3>
+               <div class="poster-list">
+                  <img src="../src/movie-img/1.jpg">
+                  <img src="../src/movie-img/2.jpg">
+                  <img src="../src/movie-img/3.jpg">
+               </div>
+            </div>
+            <div class="coment">
+               <textarea id="commentText" placeholder="감동을 글로 남겨보세요"></textarea>
+               <button id="commentButton">코멘트 남기기</button>
+               <div id="commentsSection">
+                  <!-- 저장된 코멘트들이 여기에 표시됩니다. -->
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </main>
+   <script src="../js/clock.js"></script>
+   <script src="../js/director.js"></script>
+</body>
+
+</html>

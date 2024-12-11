@@ -1,0 +1,135 @@
+body {
+   background: #000;
+   color: #fff;
+   width: 100vw;
+   display: flex;
+   height: calc(var(--vh, 1vh) * 100);
+   align-items: center;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   /* background-image: url(../src/img/bgi.jpg);
+   background-size: cover; */
+}
+
+a {
+   color: #fff;
+   text-decoration: none;
+}
+
+main {
+   position: relative;
+   margin: 0 auto;
+   width: 360px;
+   height: 735px;
+   background-image: url(../src/img/mockup.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   /* bgi 짤리면 패딩 조정하깃 */
+   padding: 14px 17px 55px;
+}
+
+.mokup-inner {
+   position: relative;
+   z-index: 2;
+   padding: 16px 35px;
+   height: 100%;
+}
+
+.goback img {
+   width: 25px;
+   margin-top: 10px;
+}
+
+/* 헤더 */
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header img {
+   width: 72px;
+}
+
+.clock {
+   font-size: 15px;
+   font-weight: 700;
+   margin-left: 20px;
+}
+
+.movie-container img {
+   width: 100%;
+}
+
+#myform {
+   text-align: center;
+}
+
+#myform fieldset {
+   display: inline-block;
+   direction: rtl;
+   border: 0;
+}
+
+#myform fieldset legend {
+   text-align: right;
+}
+
+#myform input[type=radio] {
+   display: none;
+}
+
+#myform label {
+   font-size: 3em;
+   color: transparent;
+   text-shadow: 0 0 0 #f0f0f0;
+}
+
+#myform label:hover {
+   text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#myform label:hover~label {
+   text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#myform input[type=radio]:checked~label {
+   text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+
+#reviewContents {
+   width: 100%;
+   height: 150px;
+   padding: 10px;
+   box-sizing: border-box;
+   border: solid 1.5px #D3D3D3;
+   border-radius: 5px;
+   font-size: 16px;
+   resize: none;
+}
+
+.poster-list {
+   overflow-x: scroll;
+   display: flex;
+   -ms-overflow-style: none;
+}
+
+.poster-list::-webkit-scrollbar {
+   display: none;
+}
+
+.poster-list img {
+   width: 150px;
+   margin-right: 15px;
+}
+
+.coment textarea {
+   margin-top: 30px;
+   width: 100%;
+}
+
+.coment button {
+   background-color: #fff;
+   cursor: pointer;
+}
